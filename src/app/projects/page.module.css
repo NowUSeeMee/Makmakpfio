@@ -1,0 +1,123 @@
+.projectsPage {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.headerSection {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.pageDescription {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.controlsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background: var(--bg-color-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.searchBar:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.searchIcon {
+  color: var(--text-muted);
+  margin-right: 0.8rem;
+}
+
+.searchInput {
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+}
+
+.searchInput::placeholder {
+  color: var(--text-muted);
+}
+
+.filterGroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  background: var(--bg-color-secondary);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+  background: var(--glass-bg);
+  color: var(--text-main);
+}
+
+.activeFilter {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.noResults {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+  background: var(--bg-color-secondary);
+  border-radius: 12px;
+  border: 1px dashed var(--border-color);
+}
+
+.moreProjectsContainer {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.moreProjectsText {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+}

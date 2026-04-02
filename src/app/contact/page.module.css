@@ -1,0 +1,125 @@
+.contactPage {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.pageSubtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.contactSection {
+  width: 100%;
+  max-width: 700px;
+}
+
+.contactCard {
+  padding: 3rem;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+.cardDescription {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.1rem;
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: var(--text-main);
+  min-width: 100px;
+}
+
+.infoValue {
+  color: var(--text-muted);
+}
+
+.infoValueLink {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.infoValueLink:hover {
+  text-decoration: underline;
+  color: #60a5fa;
+}
+
+.socialSection {
+  border-top: 1px solid var(--border-color);
+  padding-top: 2.5rem;
+}
+
+.socialText {
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.iconLink {
+  width: 50px;
+  height: 50px;
+  background: var(--bg-color-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.iconLink:hover {
+  transform: translateY(-5px);
+  background: var(--glass-bg);
+  border-color: var(--accent);
+  box-shadow: 0 5px 15px var(--accent-glow);
+}
+
+@media (max-width: 600px) {
+  .contactCard {
+    padding: 2rem;
+  }
+  .infoItem {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
